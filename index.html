@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>projeto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tasks">
+    <div id="tasks-header">
+      <h2>Adicione a sua próxima tarefa</h2>
+      <form action="" id="add-tasks">
+        <input type="text" id="task-title1" placeholder="Tarefa">
+        <button type="submit" id="add-btn">
+            +
+        </button>
+      </form>
+    </div>
+    <div id="tasks-list-container">
+      <h2>Tarefas</h2>
+      <ul id="task-list">
+        <li class="task-box template hide">
+          <span class="task-title"></span>
+          <button class="done-btn">
+            V
+          </button>
+          <button class="remove-btn">
+            X
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

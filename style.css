@@ -1,0 +1,121 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, black, rgb(41, 41, 41));
+  min-height: 100vh;
+  height: auto;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  font-family:'Noto Sans', 'sans-serif';
+  font-weight: 500;
+}
+h2{
+  font-size: 35px;
+}
+.tasks{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#tasks-header{
+  margin-top: 40px;
+
+}
+
+#add-tasks{
+  position: relative;
+}
+#task-title1{
+  box-sizing: border-box;
+  border: 1px solid white;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  font-size: 18px;
+  width: 100%;
+}
+#task-title1::placeholder{
+  color: rgb(0, 0, 0);
+}
+#task-title1:focus{
+outline: none;
+}
+#add-btn{
+  position: absolute;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  transition: .5s;
+  width: 60px;
+  height: 53px;
+  top: 0;
+  right: 0;
+  font-size: 40px;
+}
+#add-btn:hover{
+  color: white;
+  background-color: rgb(99, 3, 3);
+}
+#task-list{
+  list-style: none;
+  padding-left: 0;
+
+}
+
+#task-list li{
+  text-align: left;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  border-bottom: 3px solid black;
+  background-color: white;
+  color: black;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  transition: .5s;
+  font-weight: bold;
+  font-size: 25px;
+}
+#task-list button{
+  position: absolute;
+  height: 50px;
+  transition: .5s;
+  cursor: pointer;
+  width: 40px;
+  padding: 5px;
+  border: none;
+  font-size: 25px;
+}
+.done-btn{
+  right: 40px;
+  background-color: white;
+}
+.remove-btn{
+  right: 0px;
+  background-color: white;
+}
+.done-btn:hover {
+  background-color: green;
+  color: white;
+}
+
+.remove-btn:hover {
+  background-color: red;
+  color: white;
+}
+.hide{
+  display: none;  
+}
+#task-list li.done{
+  background-color: rgb(99, 3, 3);
+  color: rgb(255, 255, 255);
+  text-decoration: line-through;
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&display=swap');
