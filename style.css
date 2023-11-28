@@ -10,6 +10,16 @@ body{
   font-family:'Noto Sans', 'sans-serif';
   font-weight: 500;
 }
+.copy{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+p{
+  font-size: 10px;
+  font-style: italic;
+  color: rgb(129, 129, 129);
+}
 h2{
   font-size: 35px;
 }
@@ -112,6 +122,11 @@ outline: none;
   text-decoration: line-through;
 }
 
+@media (max-width: 950px){
+  .tasks{
+    width: 90%
+  }
+}
 
 
 
